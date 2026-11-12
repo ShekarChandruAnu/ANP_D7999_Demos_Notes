@@ -1,0 +1,18 @@
+function addEvent(obj,evt,func)
+{
+
+obj.addEventListener(evt,func,false)
+}
+
+var myButton = document.getElementById('button1');
+addEvent(myButton,'click',display);
+<script>
+function display()
+{
+
+}
+
+</scritp>
+
+
+<button id="button1">Click </button>

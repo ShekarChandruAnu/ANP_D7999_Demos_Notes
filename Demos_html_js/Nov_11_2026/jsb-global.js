@@ -1,0 +1,1 @@
+/* jsb-global.js */

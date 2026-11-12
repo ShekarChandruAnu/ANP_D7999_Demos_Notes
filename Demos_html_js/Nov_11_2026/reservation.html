@@ -1,0 +1,120 @@
+<!-- reservation.html -->
+<html>
+<head>
+<script src="jsb-global.js"></script>
+<script src="reservation.js"></script>
+</head>
+<body bgcolor="aqua">
+<center>
+<table border="2" bgcolor="yellow">
+<tr>
+<td colspan="5">Reservation Form</td>
+</tr>
+<tr>
+	<td>Enter Name :</td>
+	<td><input type="text" id="pnrName" /></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Enter Address</td>
+	<td>
+	<textArea rows="5" cols="50" id="pnrAddr"></textArea>
+	</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Enter Phone</td>
+	<td><input type="tel" placeHolder="(080-11111111)" id="pnrPhone"/></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Select Occupation</td>
+	<td>Govt Employee <input type="radio" id="occu1"  name="occu"/></td>
+	<td>Pvt Employee <input type="radio" id="occu2" name="occu"/></td>
+	<td>Freelancer <input type="radio" id="occu3" name="occu"/></td>
+	<td>Contractor <input type="radio" id="occu4" name="occu"/></td>
+</tr>
+<tr>
+	<td>Select Gender</td>
+	<td>Male <input type="radio" id="gend1" name="gender"/></td>
+	<td>FeMale  <input type="radio" id="gender" /></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Select Source</td>
+	<td>
+		<select id="cmbSource">
+		<option value="blr">Bangalore</option>
+		<option value="mmb">Mumbai</option>
+		<option value="pnr">Pune</option>
+		<option value="amd">Ahmedabad</option>
+		<option value="koa">Kolkata</option>
+		<option value="dpr">Dispur</option>
+		<option value="ohi">Ohio</option>
+	</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Select Destination</td>
+	<td>
+		<select id="cmbDest">
+		<option value="blr">Bangalore</option>
+		<option value="mmb">Mumbai</option>
+		<option value="pnr">Pune</option>
+		<option value="amd">Ahmedabad</option>
+		<option value="koa">Kolkata</option>
+		<option value="dpr">Dispur</option>
+		<option value="ohi">Ohio</option>
+	</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Date Of Journey</td>
+	<td><input type="date" id="doj" /></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Mail Id</td>
+	<td><input type="mail" required id="pnrMail"</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>No Of Tickets</td>
+	<td><input type="number" min="1" max="10" id="noTkts" /></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>Preferences</td>
+	<td>Smoking <input type="checkBox" id="chk1" /></td>
+	<td>Vegetarian <input type="checkBox" id="chk2" /></td>
+	<td>Non Smoking <input type="checkBox" id="chk3" /></td>
+	<td>Non Vegetarian <input type="checkBox" id="chk4" /></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+</center>
+</body>
+</html>

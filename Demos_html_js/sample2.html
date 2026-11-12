@@ -1,0 +1,118 @@
+<html>
+<head>
+<script>
+function ifElse()
+{
+	/*alert("in if Else");*/
+	var score;
+	score = prompt("Enter your Score");
+	if(score >= 50)
+	{
+		alert("Good Passed");
+	}
+	else
+	{
+		alert("Sorry Try Again");
+	}
+}
+function switcher()
+{
+	/*alert("in switch case");*/
+	var day = prompt("Enter the Day 1-7");
+	switch(day)
+	{
+		case "1":
+		{
+			alert("Day is Monday");
+			break;
+		}
+		case "2":
+		{
+			alert("Day is Tuesday");
+			break;
+		}
+		case "3":
+		{
+			alert("Day is Wednesday");
+			break;
+		}
+		case "4":
+		{
+			alert("Day is Thursday");
+			break;
+		}
+		case "5":
+		{
+			alert("Day is Friday");
+			break;
+		}
+		case "6":
+		{
+			alert("Day is Saturday");
+			break;
+		}
+		case "7":
+		{
+			alert("Day is Sunday");
+			break;
+		}
+		default:
+		{
+			alert("Valid Range is 1-7");
+			break;
+		}
+	}
+}
+function ifElseIf()
+{
+	/*alert("in if Else If");*/
+var score;
+	score = prompt("Enter your Score");
+if( (score >= 0) && (score <= 100)) 
+{
+	if((score >= 50) && (score < 60))
+	{
+		alert("Good Passed");
+	}
+	else if((score >= 60) && (score < 70))
+	{
+		alert("VGood Secured  First Class");
+	}
+	else if((score >= 70) && (score <= 100))
+	{
+		alert("Excellent Secured Distinction");
+	}
+	else
+	{
+		alert("Sorry Try AGain...");
+	}
+}
+else
+{
+	alert("Sorry Valid Range is 0-100");
+}
+}
+function whiler()
+{
+	//alert("in while");
+	// array is an object of Array class - join
+var months= ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var aIdx = 0;
+	while( aIdx < months.length)
+	{
+		document.writeln("The Month is "+months[aIdx]+"</br>");
+		aIdx++;
+	}
+}
+</script>
+</head>
+<body bgcolor="aqua">
+<center>
+	<h2> Constructs & Loops </h2>
+	<button onClick="ifElse()">If Else </button>
+	<button onClick="switcher()">switch </button>
+	<button onClick="ifElseIf()">If Else if</button>
+	<button onClick="whiler()">While Loop </button>
+</center>
+</body>
+</html>

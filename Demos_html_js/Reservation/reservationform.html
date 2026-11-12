@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Reservation Form</title>
+<script src="jsb-global.js"></script>
+<script src="reserve.js"></script>
+</head>
+<body bgcolor="aqua">
+<center>
+
+Welcome to Reservation Form<br>
+<table border="2" bgcolor="yellow">
+<thead>
+Enter Details of Reservation
+</thead>
+<tbody>
+<tr>
+<td>Enter Name :</td>
+<td><input type="text" id="t1" /></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enter Address:</td>
+<td><textarea rows="4" cols="45" id="ta1" ></textarea></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enter Phone:</td>
+<td><input type="tel" id="tele" placeholder="(080-11111111)"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Select Occupation:</td>
+<td>Govt Employee:<input id="r1"  type="radio" name="occu" /></td>
+<td>Pvt Employee:<input id="r2" type="radio" name="occu"/></td>
+<td>Self Employed:<input id="r3" type="radio" name="occu"/></td>
+<td>FreeLancer:<input id="r4" type="radio" name="occu"/></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>Male:<input id="g1" type="radio" name="gend"/></td>
+<td>FeMale:<input id="g2" type="radio" name="gend"/></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Select Source:</td>
+<td>
+<select id="source">
+<option value="bg">Bangalore</option>
+<option value="nd">NewDelhi</option>
+<option value="ch">Chennai</option>
+<option value="mu">Mumbai</option>
+<option value="hy">Hyderabad</option>
+<option value="ng">Nagpur</option>
+<option value="gz">Ghaziabad</option>
+<option value="kn">Kanpur</option>
+</select>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Select Destination:</td>
+<td>
+<select id="dest">
+<option value="bg">Bangalore</option>
+<option value="nd">NewDelhi</option>
+<option value="ch">Chennai</option>
+<option value="mu">Mumbai</option>
+<option value="hy">Hyderabad</option>
+<option value="ng">Nagpur</option>
+<option value="gz">Ghaziabad</option>
+<option value="kn">Kanpur</option>
+</select>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Select Date Of Journey:</td>
+<td><input type="date" id="doj" /></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enter Mail Id:</td>
+<td><input type="mail" id="mail1" required/></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enter Number Of Tickets:</td>
+<td><input type="number" min="1" max="10" id="noft" /></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Select Preferences:</td>
+<td>Smoking:<input type="checkbox" name="pref" id="chk1" /></td>
+<td>Non Smoking:<input type="checkbox" name="pref" id="chk2"/></td>
+<td>Vegetarian:<input type="checkbox" name="pref" id="chk3"/></td>
+<td>Non Vegetarian:<input type="checkbox" name="pref" id="chk4"/></td>
+</tr>
+
+
+<tr>
+<td>Submit:</td>
+<td><input type="submit" value="Reserve" id="s1" /></td>
+<td>ReSet:</td>
+<td><input type="reset" value="Reset" id="r1" /></td>
+<td></td>
+</tr>
+
+</tbody>
+</table>
+
+</center>
+</body>
+</html>
